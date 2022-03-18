@@ -12,6 +12,37 @@
 	</head>
 	<body class="is-preload">
 
+			<!-- Messenger Chat Plugin Code -->
+			<div id="fb-root"></div>
+
+			<!-- Your Chat Plugin code -->
+			<div id="fb-customer-chat" class="fb-customerchat">
+			</div>
+		
+			<script>
+			  var chatbox = document.getElementById('fb-customer-chat');
+			  chatbox.setAttribute("page_id", "101472405839853");
+			  chatbox.setAttribute("attribution", "biz_inbox");
+			</script>
+		
+			<!-- Your SDK code -->
+			<script>
+			  window.fbAsyncInit = function() {
+				FB.init({
+				  xfbml            : true,
+				  version          : 'v13.0'
+				});
+			  };
+		
+			  (function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+				fjs.parentNode.insertBefore(js, fjs);
+			  }(document, 'script', 'facebook-jssdk'));
+			</script>
+
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
@@ -33,13 +64,15 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>Employ Ukrainians</h1>
+							<p><a href="https://www.facebook.com/employukrainians"target="_blank">Facebook Page <ion-icon name="logo-facebook"></ion-icon></a> - <a href="https://www.facebook.com/employukrainians"target="_blank">LinkedIn Page <ion-icon name="logo-linkedin"></ion-icon></a> - <a href="https://www.instagram.com/employukrainians"target="_blank">Instagram Profile <ion-icon name="logo-instagram"></ion-icon></a></p>
+
 							<h4>Job Seekers</h4>
 							<p>This is an initiative to help all Ukrainians, citizens or not, finding employment and jobs. <a href="https://forms.gle/ppPaUrHRod5sJEwm6"target="_blank">Please share your CV or resume via this Job Seeker's Form<ion-icon name="logo-google"></ion-icon>.</a><br /></p>
 							
 							<h4>Employers</h4>
 							<p>This is a humble call to the employers, companies, corporates, govts and states to come forward in this cause. <a href="https://forms.gle/DAZo2CstidW4VLDG6"target="_blank">Share your jobs (via this Employer's Form)<ion-icon name="logo-google"></ion-icon></a> you wish to hire and employ Ukrainians for.<br /></p>
 							
-							<h3>Volunteers</h3>
+							<h4>Volunteers</h4>
 							<p>Also calling for volunteers like recruiters, immigration specialists, Ukrainian speakers etc. to help this initiative workable. <a href="https://forms.gle/WzLReCW6RNk1wuYY9"target="_blank">Fill-up this Volunteer's Form<ion-icon name="logo-google"></ion-icon></a> to begin contributing.<br /></p>
 							
 							<p><b>Note</b>: Our resources are growing now, additional to Volunteers and LinkedIn Premium, we are also in talks with local Labor Offices (and organizations) of the countries welcoming Ukrainians.
@@ -92,7 +125,18 @@
 								</div>
 							</div>
 						</section>
-
+						<section>
+							<a class="image"><img src="images/pic17.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Ангелина Монастырук, from Kyiv to Brno, I help co-ordinating efforts.</h2>
+									<p> "Dear fellow Ukrainians! At these hard times, you you are in the situation when moving to different countries is the way to save your lives. However, most of you are facing further difficulties like adjusting yourselves to the new conditions. But remember that you are not alone and you do have new opportunities. We will gladly help you find jobs all over Europe, so you can have financial stability and social development."</p>
+									<ul class="actions">
+										<li><a href="mailto:esolomakh@gmail.com" class="button">Contact me</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
 					</section>
 
 				<!-- Two -->
@@ -171,8 +215,8 @@
 											<h3>Prague and Brno</h3>
 										<!--	<span>Brno<br />
 											text<br /> -->
-											Czech Republic</span>
-										</li>
+										Czech Republic</span>
+										<!--</li>
 										<li>
 											<h3>Email</h3>
 											<a href="#">prashantnagle@gmail.com</a>
@@ -180,14 +224,14 @@
 										<li>
 											<h3>Phone</h3>
 											<span>+420 608 756 616</span>
-										</li>
+										</li>-->
 										<li>
 											<h3>Social</h3>
 											<ul class="icons">
 												<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>-->
 												<li><a href="https://www.facebook.com/employukrainians" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 												<!-- <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
-												<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+												<li><a href="https://www.instagram.com/employukrainians/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 												<li><a href="https://www.linkedin.com/company/employukrainians" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 											</ul>
 										</li>
